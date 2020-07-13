@@ -1,51 +1,93 @@
-# Gatsby Markdown Personal Website
+# Gatsby and TailwindCSS blog starter
 
-This is a personal website / blog using [Gatsby](https://www.gatsbyjs.org/), [Markdown](https://www.markdownguide.org/), [Styled Components](https://styled-components.com/), [Talwind CSS](https://tailwindcss.com/), [Framer Motion](https://www.framer.com/motion/) & [React Font Awesome](https://github.com/FortAwesome/react-fontawesome).
+Kick off your project with this blog boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React and [TailwindCSS](https://tailwindcss.com/), a utility-first CSS framework for rapidly building custom designs.
 
-## Demo
+_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
 
-[Gatsby Markdown Personal Website](https://gatsby-markdown-personal-website.netlify.app/)
-
-## Quick start
+## 🚀 Quick start
 
 1.  **Create a Gatsby site.**
 
-    Use the Gatsby CLI to create a new site, using the Gatsby Markdown Personal Website starter.
+    Use the Gatsby CLI to create a new site, specifying the TailwindCSS blog starter.
 
     ```shell
-    gatsby new my-site-name https://github.com/SaimirKapaj/gatsby-markdown-personal-website
+    # create a new Gatsby site using the blog starter
+    gatsby new my-tailwindcss-blog-starter https://github.com/andrezzoid/gatsby-starter-blog-tailwindcss
     ```
 
-2.  **Develop**
+1.  **Start developing.**
 
-    Navigate into your new site’s directory and start the development environment.
+    Navigate into your new site’s directory and start it up.
 
     ```shell
+    cd my-tailwindcss-blog-starter/
     gatsby develop
     ```
 
-    Your site is now running at `http://localhost:8000`
+1.  **Open the source code and start editing!**
 
-3.  **Build**
+    Your site is now running at `http://localhost:8000`!
 
-    Get an optimized production build for your site generating static HTML and JavaScript, CSS bundles.
+    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
 
-    ```shell
-    gatsby build
-    ```
+    Open the `my-tailwindcss-blog-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
 
-4.  **Serve**
+## 🧐 What's inside?
 
-    Starts a local server for testing your production site.
+A quick look at the top-level files and directories you'll see in a Gatsby project.
 
-    ```shell
-    gatsby serve
-    ```
+    .
+    ├── node_modules
+    ├── src
+    ├── .gitignore
+    ├── .prettierrc
+    ├── gatsby-browser.js
+    ├── gatsby-config.js
+    ├── gatsby-node.js
+    ├── gatsby-ssr.js
+    ├── LICENSE
+    ├── package-lock.json
+    ├── package.json
+    ├── postcss.config.js
+    ├── README.md
+    └── tailwind.config.js
 
-    Your production site is now running at `http://localhost:9000`
+1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
 
-## Deploy
+2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/SaimirKapaj/gatsby-markdown-personal-website)
+3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
 
-[![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/import/project?template=https://github.com/SaimirKapaj/gatsby-markdown-personal-website)
+4.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
+
+5.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.org/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
+
+6.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.org/docs/gatsby-config/) for more detail).
+
+7.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.org/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
+
+8.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.org/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
+
+9.  **`LICENSE`**: Gatsby is licensed under the MIT license.
+
+10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
+
+11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
+
+12. **`postcss.config.js`**: The [PostCSS](https://postcss.org/) configuration file where TailwindCSS is configured as a plugin and other plugins like autoprefixer or postcss-purgecss can be added.
+
+13. **`README.md`**: A text file containing useful reference information about your project.
+
+11. **`tailwind.config.js`**: The [TailwindCSS](https://tailwindcss.com/) configuration file, see their documentation for more information on how to customize Tailwind.
+
+## 🎓 Learning Gatsby
+
+Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.org/). Here are some places to start:
+
+- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.org/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
+
+- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
+
+## 💫 Deploy
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/andrezzoid/gatsby-starter-blog-tailwindcss)
