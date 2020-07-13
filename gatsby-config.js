@@ -6,7 +6,7 @@ module.exports = {
       summary: `who lives and works in San Francisco building useful things.`,
     },
     description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
+    siteUrl: `https://https://practical-engelbart-82fa47.netlify.app/`,
     social: {
       twitter: `kylemathews`,
     },
@@ -58,24 +58,18 @@ module.exports = {
     },
     `gatsby-plugin-feed`,
     {
-   {
-   resolve: 'gatsby-plugin-manifest',
-   options: {
-      icon: 'icon.svg',
-      cache_busting_mode: 'none'
-   }
-},
-{
-   resolve: 'gatsby-plugin-offline',
-   options: {
-      workboxConfig: {
-         globPatterns: ['**/*']
-      }
-   }
-}
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Gatsby Starter Blog`,
+        short_name: `GatsbyJS`,
+        start_url: `/`,
+        background_color: `#ffffff`,
+        theme_color: `#663399`,
+        display: `minimal-ui`,
+        icon: `content/assets/gatsby-icon.png`,
+      },
+    },
 
-
-    
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-typography`,
