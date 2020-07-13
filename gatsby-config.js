@@ -1,4 +1,4 @@
-const defaultSiteUrl = "https://wijvantech.com"
+const path = require("path")
 
 module.exports = {
   siteMetadata: {
